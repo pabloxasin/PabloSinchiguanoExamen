@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PabloSinchiguanoExamen.Registro">
+
+    <Grid RowSpacing="5" ColumnSpacing="10" Background="#FF105090" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="REGISTRO DE ESTUDIANTES" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="25" BackgroundColor="#3E9375" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        <Label x:Name="lblNombreUsuario" Grid.Row="1" Grid.Column="0" TextColor="White" FontSize="20" BackgroundColor="#3E9375" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        <Entry x:Name="txtNombre" Keyboard="Text" Placeholder="Ingrese su nombre:" BackgroundColor="#69A01F" Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="20"/>
+        <Entry x:Name="txtMontoInicial" Keyboard="Numeric" Placeholder="Monto inical:" BackgroundColor="#69A01F" Grid.Row="3" Grid.Column="0" TextColor="Black" FontSize="20" />
+        <Button x:Name="btnCalcular"   BackgroundColor="#14D228" Grid.Row="4" Grid.Column="0" Text="Calcular" TextColor="White" FontSize="25" 
+                Clicked="btnCalcular_Clicked"/>
+        <Entry x:Name="txtPagoMensual" Keyboard="Numeric" Placeholder="Pago mensual a realizar:" BackgroundColor="#69A01F" Grid.Row="5" Grid.Column="0" TextColor="Black" IsReadOnly="True" FontSize="20" />
+        <Button x:Name="btnGuardar"     BackgroundColor="#14D228" Grid.Row="6" Grid.Column="0" Text="Guardar" TextColor="White" FontSize="25" 
+                Clicked="btnGuardar_Clicked"/>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PabloSinchiguanoExamen.Resumen">
+    <ContentPage.Content>
+        <Grid RowSpacing="2" ColumnSpacing="10" Background="#FF105090" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Text=" * Resumen de inscripción *" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="30" BackgroundColor="#3E9375" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label x:Name="lblUsuario" Grid.Row="1" Grid.Column="0" TextColor="White" FontSize="20" BackgroundColor="#3E9375" HorizontalTextAlignment="Start"/>
+            <Label x:Name="lblNombre" Grid.Row="2" Grid.Column="0" TextColor="White" FontSize="20" BackgroundColor="#3E9375" HorizontalTextAlignment="Start"/>
+            <Label x:Name="lblTotal" Grid.Row="3" Grid.Column="0" TextColor="White" FontSize="20" BackgroundColor="#3E9375" HorizontalTextAlignment="Start"/>
+            <Entry x:Name="lblMensual" Grid.Row="4" Grid.Column="0" TextColor="White" FontSize="20" BackgroundColor="#3E9375" HorizontalTextAlignment="Start"/>
+            <Button x:Name="btnImprimir"     BackgroundColor="#14D228" Grid.Row="5" Grid.Column="0" Text="Guardar" TextColor="White" FontSize="30"
+                    Clicked="btnImprimir_Clicked"
+             />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
